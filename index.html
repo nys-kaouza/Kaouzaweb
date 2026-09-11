@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Francisco & Stephany | 19.10.2027</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Tipografías -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <audio id="musica" loop>
+        <source src="audio/carry-on.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- =========================
+         PORTADA
+    ========================== -->
+
+    <section class="portada" id="portada">
+
+        <div class="simbolo">✦</div>
+
+        <p class="texto-superior">
+            ESTÁS INVITADO A NUESTRA BODA
+        </p>
+
+        <h1>
+            Francisco
+            <span>&</span>
+            Stephany
+        </h1>
+
+        <div class="linea"></div>
+
+        <p class="fecha-portada">
+            19 · OCTUBRE · 2027
+        </p>
+
+        <p class="frase">
+            We've found our way home.
+        </p>
+
+        <button class="boton" onclick="abrirInvitacion()">
+            ABRIR INVITACIÓN
+        </button>
+
+    </section>
+
+
+    <!-- =========================
+         CONTENIDO
+    ========================== -->
+
+    <main id="contenido">
+
+
+        <!-- INTRODUCCIÓN -->
+
+        <section class="seccion bienvenida">
+
+            <div class="simbolo-pequeno">✦</div>
+
+            <p class="etiqueta">
+                NUESTRA HISTORIA
+            </p>
+
+            <h2>
+                Algunas historias
+                <br>
+                simplemente se encuentran.
+            </h2>
+
+            <p class="texto">
+                Después de tantas aventuras, risas, momentos difíciles
+                y recuerdos compartidos, encontramos nuestro lugar
+                favorito: el uno junto al otro.
+            </p>
+
+            <p class="texto">
+                Y ahora queremos comenzar nuestra siguiente aventura
+                juntos.
+            </p>
+
+        </section>
+
+
+        <!-- FOTO HISTORIA -->
+
+        <section class="foto-grande">
+            <img src="img/historia1.png" alt="Francisco y Stephany">
+        </section>
+
+
+        <!-- NOS CASAMOS -->
+
+        <section class="seccion">
+
+            <p class="etiqueta">
+                EL COMIENZO DE UNA NUEVA AVENTURA
+            </p>
+
+            <h2>
+                ¡Nos casamos!
+            </h2>
+
+            <p class="texto">
+                Con mucha alegría queremos compartir contigo
+                el día en que comenzaremos oficialmente nuestra
+                vida juntos.
+            </p>
+
+            <div class="nombres">
+                <span>FRANCISCO</span>
+                <small>&</small>
+                <span>STEPHANY</span>
+            </div>
+
+            <p class="fecha">
+                19 DE OCTUBRE DE 2027
+            </p>
+
+        </section>
+
+
+        <!-- CUENTA REGRESIVA -->
+
+        <section class="countdown-section">
+
+            <p class="etiqueta">
+                THE COUNTDOWN BEGINS
+            </p>
+
+            <h2>
+                Falta poco...
+            </h2>
+
+            <div class="countdown">
+
+                <div>
+                    <span id="dias">00</span>
+                    <small>DÍAS</small>
+                </div>
+
+                <div>
+                    <span id="horas">00</span>
+                    <small>HORAS</small>
+                </div>
+
+                <div>
+                    <span id="minutos">00</span>
+                    <small>MIN</small>
+                </div>
+
+                <div>
+                    <span id="segundos">00</span>
+                    <small>SEG</small>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CEREMONIA -->
+
+        <section class="evento">
+
+            <div class="icono">
+                ♰
+            </div>
+
+            <p class="etiqueta">
+                CEREMONIA RELIGIOSA
+            </p>
+
+            <h2>
+                Parroquia
+                <br>
+                Santa Rosa de Lima
+            </h2>
+
+            <p class="hora">
+                HORA POR CONFIRMAR
+            </p>
+
+            <p class="direccion">
+                Félix Lozano 314,
+                <br>
+                Santa Rosa,
+                <br>
+                Apodaca, Nuevo León
+            </p>
+
+            <a
+                class="boton-secundario"
+                href="https://www.google.com/maps/search/?api=1&query=Parroquia+Santa+Rosa+de+Lima+Apodaca+Nuevo+Leon"
+                target="_blank">
+                VER UBICACIÓN
+            </a>
+
+        </section>
+
+
+        <!-- FOTO IGLESIA -->
+
+        <section class="foto-grande">
+            <img src="img/iglesia.jpg" alt="Parroquia Santa Rosa de Lima">
+        </section>
+
+
+        <!-- RECEPCIÓN -->
+
+        <section class="evento">
+
+            <div class="icono">
+                ♢
+            </div>
+
+            <p class="etiqueta">
+                RECEPCIÓN
+            </p>
+
+            <h2>
+                Hacienda
+                <br>
+                El Manantial
+            </h2>
+
+            <p class="hora">
+                HORA POR CONFIRMAR
+            </p>
+
+            <p class="direccion">
+                Av. de la Concordia 539,
+                <br>
+                Bosques Real I,
+                <br>
+                Apodaca, Nuevo León
+            </p>
+
+            <a
+                class="boton-secundario"
+                href="https://www.google.com/maps/search/?api=1&query=Hacienda+El+Manantial+Apodaca+Nuevo+Leon"
+                target="_blank">
+                VER UBICACIÓN
+            </a>
+
+        </section>
+
+
+        <!-- FOTO SALÓN -->
+
+        <section class="foto-grande">
+            <img src="img/salon.jpg" alt="Hacienda El Manantial">
+        </section>
+
+
+        <!-- DRESS CODE -->
+
+        <section class="dress-code">
+
+            <div class="simbolo-grande">
+                ✦
+            </div>
+
+            <p class="etiqueta">
+                DRESS CODE
+            </p>
+
+            <h2>
+                ALL BLACK
+            </h2>
+
+            <div class="linea"></div>
+
+            <p class="texto">
+                Les pedimos acompañarnos vistiendo
+                completamente de negro.
+            </p>
+
+            <p class="frase">
+                Black is always in style.
+            </p>
+
+        </section>
+
+
+        <!-- NO NIÑOS -->
+
+        <section class="seccion adults">
+
+            <div class="simbolo-pequeno">
+                ✦
+            </div>
+
+            <p class="etiqueta">
+                IMPORTANTE
+            </p>
+
+            <h2>
+                Adults Only
+            </h2>
+
+            <p class="texto">
+                Esta celebración ha sido planeada
+                exclusivamente para adultos.
+            </p>
+
+            <p class="texto">
+                Agradecemos mucho su comprensión
+                y esperamos poder compartir este
+                día tan especial contigo.
+            </p>
+
+        </section>
+
+
+        <!-- GALERÍA -->
+
+        <section class="galeria-section">
+
+            <p class="etiqueta">
+                OUR STORY
+            </p>
+
+            <h2>
+                Algunos de nuestros momentos
+            </h2>
+
+            <div class="galeria">
+
+                <img src="img/foto1.jpeg" alt="Foto de Francisco y Stephany">
+
+                <img src="img/foto2.jpeg" alt="Foto de Francisco y Stephany">
+
+                <img src="img/foto3.jpeg" alt="Foto de Francisco y Stephany">
+
+                <img src="img/foto4.jpeg" alt="Foto de Francisco y Stephany">
+
+                <img src="img/foto5.jpeg" alt="Foto de Francisco y Stephany">
+
+                <img src="img/foto6.jpeg" alt="Foto de Francisco y Stephany">
+
+            </div>
+
+        </section>
+
+
+        <!-- CONFIRMACIÓN -->
+
+        <section class="confirmacion">
+
+            <div class="simbolo-grande">
+                ♡
+            </div>
+
+            <p class="etiqueta">
+                ¿NOS ACOMPAÑAS?
+            </p>
+
+            <h2>
+                Confirma tu asistencia
+            </h2>
+
+            <p class="texto">
+                Nos encantaría compartir este día
+                tan importante contigo.
+            </p>
+
+            <a
+                class="boton"
+                href="https://wa.me/528118889001?text=Hola%20Francisco%20y%20Stephany%2C%20confirmo%20mi%20asistencia%20a%20su%20boda."
+                target="_blank">
+                CONFIRMAR POR WHATSAPP
+            </a>
+
+        </section>
+
+
+        <!-- FINAL -->
+
+        <footer>
+
+            <div class="simbolo-grande">
+                ✦
+            </div>
+
+            <p>
+                WE'VE GOT WORK TO DO.
+            </p>
+
+            <p class="frase-final">
+                BUT FIRST...
+            </p>
+
+            <h2>
+                LET'S GET MARRIED.
+            </h2>
+
+            <div class="linea"></div>
+
+            <h3>
+                FRANCISCO & STEPHANY
+            </h3>
+
+            <p>
+                19 · 10 · 2027
+            </p>
+
+            <small>
+                KAOUZA.RAW
+            </small>
+
+        </footer>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

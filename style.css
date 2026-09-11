@@ -1,0 +1,750 @@
+/* =====================================================
+   KAOUZA.RAW
+   FRANCISCO & STEPHANY
+   19 · 10 · 2027
+===================================================== */
+
+
+/* =========================
+   CONFIGURACIÓN GENERAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #e8dcc8;
+    color: #4b3529;
+    font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
+}
+
+
+/* =========================
+   TIPOGRAFÍA
+========================= */
+
+h1,
+h2,
+h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 3.2rem;
+    line-height: 1.05;
+}
+
+p {
+    line-height: 1.8;
+}
+
+
+/* =========================
+   PORTADA
+========================= */
+
+.portada {
+    min-height: 100vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 40px 25px;
+
+    background:
+        linear-gradient(
+            rgba(45, 32, 25, 0.78),
+            rgba(45, 32, 25, 0.88)
+        ),
+        url("img/portada.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    color: #e8dcc8;
+
+    position: relative;
+}
+
+
+/* pequeño símbolo */
+
+.simbolo {
+    font-size: 30px;
+    margin-bottom: 35px;
+    color: #c5a97b;
+
+    animation: aparecer 2s ease;
+}
+
+
+/* texto superior */
+
+.texto-superior {
+    font-size: 10px;
+    letter-spacing: 4px;
+    margin-bottom: 25px;
+}
+
+
+/* nombres */
+
+.portada h1 {
+    font-size: clamp(4rem, 12vw, 8rem);
+    line-height: 0.8;
+
+    display: flex;
+    flex-direction: column;
+
+    text-transform: uppercase;
+}
+
+.portada h1 span {
+    font-size: 3rem;
+    margin: 15px 0;
+    font-family: "Cormorant Garamond", serif;
+}
+
+
+/* línea decorativa */
+
+.linea {
+    width: 100px;
+    height: 1px;
+
+    background-color: #bca174;
+
+    margin: 30px auto;
+}
+
+
+/* fecha */
+
+.fecha-portada {
+    letter-spacing: 5px;
+    font-size: 13px;
+}
+
+
+/* frase */
+
+.frase {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 20px;
+    font-style: italic;
+    margin-top: 15px;
+}
+
+
+/* botón */
+
+.boton {
+    display: inline-block;
+
+    margin-top: 40px;
+
+    padding: 15px 30px;
+
+    border: 1px solid #c5a97b;
+
+    background-color: transparent;
+
+    color: #e8dcc8;
+
+    text-decoration: none;
+
+    font-family: "Montserrat", sans-serif;
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+
+    cursor: pointer;
+
+    transition: all 0.4s ease;
+}
+
+.boton:hover {
+    background-color: #c5a97b;
+    color: #2d2019;
+}
+
+
+/* =========================
+   CONTENIDO
+========================= */
+
+#contenido {
+    display: none;
+}
+
+
+/* =========================
+   SECCIONES
+========================= */
+
+.seccion {
+    max-width: 850px;
+
+    margin: auto;
+
+    padding: 110px 25px;
+
+    text-align: center;
+}
+
+
+/* etiqueta pequeña */
+
+.etiqueta {
+    font-size: 10px;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 25px;
+
+    color: #85634d;
+}
+
+
+/* texto */
+
+.texto {
+    max-width: 600px;
+
+    margin: 25px auto 0;
+
+    font-size: 14px;
+
+    color: #675043;
+}
+
+
+/* símbolo pequeño */
+
+.simbolo-pequeno {
+    font-size: 25px;
+
+    color: #a98b61;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   FOTO GRANDE
+========================= */
+
+.foto-grande {
+    width: 100%;
+
+    height: 600px;
+
+    overflow: hidden;
+}
+
+.foto-grande img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* =========================
+   NOMBRES
+========================= */
+
+.nombres {
+    margin-top: 55px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 20px;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 30px;
+
+    letter-spacing: 3px;
+}
+
+.nombres small {
+    font-size: 25px;
+
+    color: #a98b61;
+}
+
+.fecha {
+    margin-top: 20px;
+
+    letter-spacing: 4px;
+
+    font-size: 11px;
+}
+
+
+/* =========================
+   CUENTA REGRESIVA
+========================= */
+
+.countdown-section {
+    background-color: #5a4032;
+
+    color: #e8dcc8;
+
+    text-align: center;
+
+    padding: 100px 20px;
+}
+
+.countdown-section .etiqueta {
+    color: #cbb18a;
+}
+
+.countdown-section h2 {
+    margin-bottom: 50px;
+}
+
+
+.countdown {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 50px;
+}
+
+.countdown div {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.countdown span {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 60px;
+
+    font-weight: 300;
+}
+
+.countdown small {
+    font-size: 9px;
+
+    letter-spacing: 3px;
+
+    margin-top: 5px;
+
+    color: #cbb18a;
+}
+
+
+/* =========================
+   EVENTOS
+========================= */
+
+.evento {
+    text-align: center;
+
+    padding: 110px 25px;
+
+    background-color: #e8dcc8;
+}
+
+.icono {
+    font-size: 35px;
+
+    color: #9d8058;
+
+    margin-bottom: 25px;
+}
+
+.evento h2 {
+    margin-bottom: 30px;
+}
+
+.hora {
+    font-size: 11px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 25px;
+}
+
+.direccion {
+    font-size: 13px;
+
+    line-height: 2;
+
+    color: #705849;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   BOTÓN SECUNDARIO
+========================= */
+
+.boton-secundario {
+    display: inline-block;
+
+    padding: 13px 25px;
+
+    border: 1px solid #765744;
+
+    color: #765744;
+
+    text-decoration: none;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    transition: all 0.3s ease;
+}
+
+.boton-secundario:hover {
+    background-color: #765744;
+
+    color: #e8dcc8;
+}
+
+
+/* =========================
+   DRESS CODE
+========================= */
+
+.dress-code {
+    background-color: #211b18;
+
+    color: #e8dcc8;
+
+    text-align: center;
+
+    padding: 120px 25px;
+}
+
+.dress-code .etiqueta {
+    color: #bda67d;
+}
+
+.dress-code h2 {
+    font-size: 4.5rem;
+
+    letter-spacing: 8px;
+
+    margin: 20px 0;
+}
+
+.dress-code .texto {
+    color: #cfc0aa;
+}
+
+.dress-code .frase {
+    color: #bda67d;
+}
+
+
+/* símbolo grande */
+
+.simbolo-grande {
+    font-size: 35px;
+
+    color: #bda67d;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   ADULTS ONLY
+========================= */
+
+.adults {
+    background-color: #e1d3bd;
+}
+
+
+/* =========================
+   GALERÍA
+========================= */
+
+.galeria-section {
+    padding: 110px 25px;
+
+    text-align: center;
+
+    background-color: #f0e6d5;
+}
+
+.galeria-section h2 {
+    margin-bottom: 50px;
+}
+
+.galeria {
+    max-width: 1000px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 10px;
+}
+
+.galeria img {
+    width: 100%;
+
+    height: 350px;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform 0.5s ease;
+}
+
+.galeria img:hover {
+    transform: scale(1.03);
+}
+
+
+/* =========================
+   CONFIRMACIÓN
+========================= */
+
+.confirmacion {
+    background-color: #5a4032;
+
+    color: #e8dcc8;
+
+    text-align: center;
+
+    padding: 120px 25px;
+}
+
+.confirmacion .etiqueta {
+    color: #cbb18a;
+}
+
+.confirmacion h2 {
+    margin-bottom: 20px;
+}
+
+.confirmacion .texto {
+    color: #d4c5b0;
+
+    margin-bottom: 20px;
+}
+
+.confirmacion .boton {
+    color: #e8dcc8;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #211b18;
+
+    color: #e8dcc8;
+
+    text-align: center;
+
+    padding: 100px 25px;
+}
+
+footer p {
+    font-size: 10px;
+
+    letter-spacing: 4px;
+}
+
+footer .frase-final {
+    margin-top: 20px;
+
+    color: #bda67d;
+}
+
+footer h2 {
+    margin-top: 10px;
+
+    font-size: 3rem;
+}
+
+footer h3 {
+    font-size: 20px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 15px;
+}
+
+footer small {
+    display: block;
+
+    margin-top: 50px;
+
+    font-size: 9px;
+
+    letter-spacing: 4px;
+
+    color: #8e7865;
+}
+
+
+/* =========================
+   ANIMACIONES
+========================= */
+
+@keyframes aparecer {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =========================
+   RESPONSIVE - CELULAR
+========================= */
+
+@media (max-width: 700px) {
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+
+    .portada {
+        padding: 30px 20px;
+    }
+
+
+    .portada h1 {
+        font-size: 4.5rem;
+    }
+
+
+    .portada h1 span {
+        font-size: 2rem;
+    }
+
+
+    .texto-superior {
+        font-size: 8px;
+
+        letter-spacing: 3px;
+    }
+
+
+    .fecha-portada {
+        font-size: 10px;
+
+        letter-spacing: 3px;
+    }
+
+
+    .foto-grande {
+        height: 450px;
+    }
+
+
+    .seccion,
+    .evento,
+    .dress-code,
+    .galeria-section,
+    .confirmacion {
+        padding: 80px 20px;
+    }
+
+
+    .nombres {
+        flex-direction: column;
+
+        gap: 5px;
+
+        font-size: 28px;
+    }
+
+
+    .nombres small {
+        font-size: 20px;
+    }
+
+
+    .countdown {
+        gap: 20px;
+    }
+
+
+    .countdown span {
+        font-size: 40px;
+    }
+
+
+    .countdown small {
+        font-size: 7px;
+
+        letter-spacing: 1px;
+    }
+
+
+    .dress-code h2 {
+        font-size: 3rem;
+
+        letter-spacing: 5px;
+    }
+
+
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 7px;
+    }
+
+
+    .galeria img {
+        height: 220px;
+    }
+
+
+    footer h2 {
+        font-size: 2.2rem;
+    }
+
+}
