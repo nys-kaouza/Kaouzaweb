@@ -15,14 +15,17 @@ function abrirInvitacion() {
     const contenido = document.getElementById("contenido");
     const musica = document.getElementById("musica");
 
-    // Intentar reproducir la música
     musica.volume = 0.35;
+    musica.currentTime = 0;
 
-    musica.play().catch(error => {
-        console.log("No se pudo reproducir la música:", error);
-    });
+    musica.play()
+        .then(() => {
+            console.log("Música reproduciéndose correctamente");
+        })
+        .catch(error => {
+            console.error("No se pudo reproducir la música:", error);
+        });
 
-    // Animación de la portada
     portada.style.opacity = "0";
 
     setTimeout(() => {
@@ -38,7 +41,6 @@ function abrirInvitacion() {
 
     }, 800);
 }
-
 
 /* =========================
    CUENTA REGRESIVA
