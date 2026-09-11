@@ -17,7 +17,10 @@ function abrirInvitacion() {
 
     // Intentar reproducir la música
     musica.volume = 0.35;
-    musica.play();
+
+    musica.play().catch(error => {
+        console.log("No se pudo reproducir la música:", error);
+    });
 
     // Animación de la portada
     portada.style.opacity = "0";
